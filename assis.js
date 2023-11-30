@@ -25,9 +25,8 @@ function wishMe() {
 }
 
 window.addEventListener("load", () => {
-  speak("Activating ");
-  
-  speak("Assistant");
+  speak("hey! i am motherbee");
+  speak("and i am here to assist on maternal care");
   wishMe();
 });
 
@@ -56,16 +55,15 @@ recognition.addEventListener("result", (e) => {
       speak(p.innerText);
     }
     if (
-      text.includes("what's your name") ||
-      text.includes("what is your name")
-    ) {
+      text.includes("what's your name") 
+     ) {
       p = document.createElement("p");
       p.classList.add("replay");
       p.innerText = "My Name is Empower";
       texts.appendChild(p);
 speak(p.innerText);
     }
-    if (text.includes("Is it safe to exercise during pregnancy")) {
+    if (text.includes(" exercise") && text.includes("pregnancy") ) {
       p = document.createElement("p");
       p.classList.add("replay");
       p.innerText =
@@ -74,7 +72,7 @@ speak(p.innerText);
    speak(p.innerText);
     }
 
-    if (text.includes("What foods should I avoid during pregnancy")) {
+    if (text.includes("foods") && text.includes("avoid")&& text.includes("pregnancy") ) {
       p = document.createElement("p");
       p.classList.add("replay");
       p.innerText =
@@ -83,7 +81,7 @@ speak(p.innerText);
       speak(p.innerText);
     }
 
-    if (text.includes("How much weight gain is normal")) {
+    if (text.includes("weight")&&text.includes("gain") && text.includes("pregnancy")) {
       p = document.createElement("p");
       p.classList.add("replay");
       p.innerText =
@@ -91,12 +89,13 @@ speak(p.innerText);
       texts.appendChild(p);
     speak(p.innerText);
     }
+    
   }
 });
 
 recognition.addEventListener("end", () => {
   recognition.start();
-  p = document.createElement("p");
+   p = document.createElement("p");
 });
 
 recognition.start();
