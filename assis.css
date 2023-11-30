@@ -95,14 +95,7 @@ nav{
   }
   
 }
-@media screen and (max-width: 769px) {
-  nav{
-    height: 22.5%;
-    position: absolute;
-    top:0%;
-  }
-  
-}
+
 @media screen and (max-width: 1024px) {
   nav{
     height: 22.5%;
@@ -111,6 +104,15 @@ nav{
   }
   .nav__logo{
     margin-left: 2%;
+  }
+  
+}
+
+@media screen and (max-width: 769px) {
+  nav{
+    height: 15%;
+    position: absolute;
+    top:0%;
   }
   
 }
