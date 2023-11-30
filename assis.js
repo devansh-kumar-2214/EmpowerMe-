@@ -63,7 +63,7 @@ recognition.addEventListener("result", (e) => {
       texts.appendChild(p);
 speak(p.innerText);
     }
-    if (text.includes(" exercise") && text.includes("pregnancy") ) {
+    if (text.includes("exercise") && text.includes("pregnancy") ) {
       p = document.createElement("p");
       p.classList.add("replay");
       p.innerText =
@@ -72,7 +72,7 @@ speak(p.innerText);
    speak(p.innerText);
     }
 
-    if (text.includes("foods") && text.includes("avoid")&& text.includes("pregnancy") ) {
+    if (text.includes("food") && text.includes("avoid")&& text.includes("pregnancy") ) {
       p = document.createElement("p");
       p.classList.add("replay");
       p.innerText =
