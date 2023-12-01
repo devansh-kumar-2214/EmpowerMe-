@@ -25,6 +25,12 @@ function wishMe() {
 }
 
 window.addEventListener("load", () => {
+  let p = document.createElement("p");
+   p = document.createElement("p");
+      p.classList.add("replay");
+      p.innerText = "hey! i am motherbee";
+      texts.appendChild(p);
+
   speak("hey! i am motherbee");
   speak("and i am here to assist on maternal care");
   wishMe();
