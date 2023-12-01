@@ -28,6 +28,11 @@ window.addEventListener("load", () => {
   speak("hey! i am motherbee");
   speak("and i am here to help with maternal care");
   wishMe();
+    let p = document.createElement("p");
+   p = document.createElement("p");
+      p.classList.add("replay");
+      p.innerText = "Hey! i am motherbee and i am here to assist on maternal care";
+      texts.appendChild(p);
 });
 
 window.SpeechRecognition =
@@ -59,7 +64,7 @@ recognition.addEventListener("result", (e) => {
      ) {
       p = document.createElement("p");
       p.classList.add("replay");
-      p.innerText = "My Name is Empower";
+      p.innerText = "My Name is MotherBee";
       texts.appendChild(p);
 speak(p.innerText);
     }
