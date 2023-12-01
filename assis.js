@@ -94,7 +94,7 @@ speak(p.innerText);
       texts.appendChild(p);
     speak(p.innerText);
     }
-    if (text.includes("travel")&&text.includes("during") && text.includes("pregnancy")) {
+    if (text.includes("travel")&& text.includes("pregnancy")) ) {
       p = document.createElement("p");
       p.classList.add("replay");
       p.innerText =
