@@ -25,14 +25,17 @@ function wishMe() {
 }
 
 window.addEventListener("load", () => {
+  
+  
+
   speak("hey! i am motherbee");
-  speak("and i am here to help with maternal care");
-  wishMe();
-    let p = document.createElement("p");
+  speak("and i am here to assist on maternal care");
+   let p = document.createElement("p");
    p = document.createElement("p");
       p.classList.add("replay");
       p.innerText = "Hey! i am motherbee and i am here to assist on maternal care";
       texts.appendChild(p);
+  wishMe();
 });
 
 window.SpeechRecognition =
@@ -64,7 +67,7 @@ recognition.addEventListener("result", (e) => {
      ) {
       p = document.createElement("p");
       p.classList.add("replay");
-      p.innerText = "My Name is MotherBee";
+      p.innerText = "My Name is Empower";
       texts.appendChild(p);
 speak(p.innerText);
     }
@@ -94,7 +97,8 @@ speak(p.innerText);
       texts.appendChild(p);
     speak(p.innerText);
     }
-    if (text.includes("travel")&& text.includes("pregnancy")) ) {
+
+    if (text.includes("travel")&&text.includes("during") && text.includes("pregnancy")) {
       p = document.createElement("p");
       p.classList.add("replay");
       p.innerText =
@@ -116,8 +120,9 @@ speak(p.innerText);
 });
 
 recognition.addEventListener("end", () => {
+  
   recognition.start();
    p = document.createElement("p");
 });
-setTimeout(recognition.start(),3000);
 
+recognition.start();
