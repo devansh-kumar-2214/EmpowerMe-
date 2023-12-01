@@ -26,7 +26,7 @@ function wishMe() {
 
 window.addEventListener("load", () => {
   speak("hey! i am motherbee");
-  speak("and i am here to assist on maternal care");
+  speak("and i am here to help with maternal care");
   wishMe();
 });
 
@@ -115,5 +115,5 @@ recognition.addEventListener("end", () => {
   recognition.start();
    p = document.createElement("p");
 });
-setTimeout(recognition.start(), 2000);
+recognition.start();
 
