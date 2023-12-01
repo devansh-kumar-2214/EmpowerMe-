@@ -121,9 +121,9 @@ speak(p.innerText);
 });
 
 recognition.addEventListener("end", () => {
-  wait(2000)
+  
   recognition.start();
    p = document.createElement("p");
 });
-setTimeout(recognition.start(),3000);
+
 recognition.start();
