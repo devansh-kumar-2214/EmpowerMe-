@@ -66,6 +66,9 @@ body {
   text-align: right;
 }
 
+nav{
+  top:0px;
+}
 /* nav{
   top:0px;
 }
